@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "8e97b649-a986-486c-be65-8532047e4d42",
+		"name": "DEMO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40696484"
+	},
+	"item": [
+		{
+			"name": "Invalid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"{{username}}\",\r\n    \"password\":\"{{password}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/api/account/authenticate",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"api",
+						"account",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"abc\",\r\n    \"countrycode\":\"+91\",\r\n    \"mobileno\":\"1234567\",\r\n    \"emailid\":\"xyz@abc.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/api/WebUserRegister",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"api",
+						"WebUserRegister"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
